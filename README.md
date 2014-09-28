@@ -38,7 +38,7 @@ config.json
 onlyCurrent
 ----------
 When `onlyCurrent` specified only subfolder with current year will be taken.  
-E.g. `data%year` will save only `data2014` subfolder during 2014 year and `data2015' during 2015 year. 
+E.g. `data%year` will save only `data2014` subfolder during 2014 year and `data2015` during 2015 year. 
 
 to path
 -------
