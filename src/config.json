@@ -1,0 +1,26 @@
+{
+    "dumps": [
+        {
+            "name": "express",
+            "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
+            "to": "/share/ndump/daily",
+            "toSubdirectory": "Triasoft/Express",
+            "onlyCurrent": "%year",
+            "frequency": "daily"
+        },
+        {
+            "name": "express",
+            "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
+            "to": "/share/ndump/weekly",
+            "toSubdirectory": "Triasoft/Express",
+            "frequency": "weekly"
+        },
+        {
+            "name": "express",
+            "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
+            "to": "/share/ndump/yearly",
+            "toSubdirectory": "Triasoft/Express",
+            "frequency": "yearly"
+        }
+    ]
+}

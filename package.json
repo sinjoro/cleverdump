@@ -1,0 +1,30 @@
+{
+  "name": "cleverdump",
+  "description": "for dumping and managing everyday dump",
+  "repository": "http://github.com/sinjoro/cleverdump",
+  "main": "dist/index.html",
+  "dependencies": {
+    "bower": "^1.3.11",
+    "find-remove": "^0.2.5",
+    "moment": "^2.8.3",
+    "ncp": "^1.0.0",
+    "node-fs": "^0.1.7",
+    "nodewebkit": "^0.10.5",
+    "nwglobal": "0.0.2",
+    "rimraf": "^2.2.8"
+  },
+  "scripts": {
+    "prestart": "bower install",
+    "start": "nodewebkit"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.1"
+  }
+}
