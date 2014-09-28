@@ -12,7 +12,9 @@ grunt
 
 **issue with libudev.so at Ubuntu**  
 `sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' node_modules/nodewebkit/nodewebkit/nw`  
+
 then type `grunt` again. 
+To run app after build you can type `npm start`
 
 
 config.json
