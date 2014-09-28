@@ -3,6 +3,17 @@ cleverdump
 
 Cleverdump for Windows/Linux/Mac.
 
+install
+-------
+```
+npm install
+grunt
+```
+
+**issue with libudev.so at Ubuntu**  
+`sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw`  
+then type `grunt` again. 
+
 
 config.json
 -----------
