@@ -6,7 +6,6 @@ Cleverdump for Windows/Linux/Mac.
 
 config.json
 -----------
-result to path:
 ```
 {
     "dumps": [
