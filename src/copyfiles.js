@@ -116,7 +116,7 @@
                         if (files.length !== 0) {
                             nextDump();
                         } else {
-                            dump.toFull += dump.frequency == 'weekly' ? moment().format('YYYY-w YYYY-MM-DD HH:mm:ss') : moment().format('YYYY-MM-DD HH:mm:ss');
+                            dump.toFull += dump.frequency == 'weekly' ? moment().format('YYYY-w__YYYY-MM-DD__HH-mm-ss') : moment().format('YYYY-MM-DD__HH-mm-ss');
 
                             if (dump.toSubdirectory) {
                                 dump.toFull += '/' + dump.toSubdirectory;
@@ -172,6 +172,8 @@
                 var message = 'Создание директории\n';
                 message += dump.toFull;
                 setInfoMessage(message);
+                console.log('[MAKE DIR CALL]');
+                console.log(dump.toFull);
                 return fs.mkdirSync(dump.toFull, '0777', true, true);
             }
 
