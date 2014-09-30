@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src='cleverdump.js'></script>
     <style>
-        .alert{
+        .alert {
             white-space: pre-wrap;
+        }
+        .navbar a{
+            line-height: 50px;
         }
     </style>
 </head>
@@ -18,8 +21,19 @@
 <div class="container" ng-controller="CopyController">
     <h1>Cleverdump</h1>
 
-    <div class="alert" ng-repeat="m in messages" ng-class="{'alert-info': m.messageStatus=='info', 'alert-danger': m.messageStatus=='error', 'alert-success': m.messageStatus=='success'}" ng-if="m.message">{{m.message}}</div>
-    <div class="alert" ng-class="{'alert-info': messageStatus=='info', 'alert-danger': messageStatus=='error', 'alert-success': messageStatus=='success'}" ng-if="message">{{message}}</div>
+    <div class="alert" ng-repeat="m in messages"
+         ng-class="{'alert-info': m.messageStatus=='info', 'alert-danger': m.messageStatus=='error', 'alert-success': m.messageStatus=='success'}"
+         ng-if="m.message">{{m.message}}
+    </div>
+    <div class="alert"
+         ng-class="{'alert-info': messageStatus=='info', 'alert-danger': messageStatus=='error', 'alert-success': messageStatus=='success'}"
+         ng-if="message">{{message}}
+    </div>
 </div>
+<nav class="navbar navbar-default navbar-fixed-bottom text-center" role="navigation">
+    <div class="container">
+        <a href="https://github.com/sinjoro/cleverdump" rel="external" target="_blank">cleverdump (c) klyukin</a>
+    </div>
+</nav>
 </body>
 </html>

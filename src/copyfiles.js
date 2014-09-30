@@ -16,6 +16,7 @@
             $scope.messages = [];
 
             nextDump();
+            var dumpsMade = 0;
             var dumpsRemoving = 0;
             var dumpsRemoved = 0;
             var removeOldDumpsFinished = false;
@@ -129,7 +130,7 @@
                     });
                 } else {
                     var message = 'Архивирование всех задач завершено\n';
-                    message += 'Сделано дампов: ' + config.dumps.length;
+                    message += 'Сделано дампов: ' + dumpsMade;
                     setSuccessMessage(message);
                     messageNext();
                     removeOldDumps();
@@ -161,6 +162,7 @@
                         return;
                     } else {
                         setSuccessMessage('Архивирование успешно завершено');
+                        dumpsMade++;
                         nextDump();
                     }
                 });

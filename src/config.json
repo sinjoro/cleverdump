@@ -22,5 +22,6 @@
             "toSubdirectory": "Triasoft/Express",
             "frequency": "yearly"
         }
-    ]
+    ],
+    "log" : "/home/stanislav/log"
 }
