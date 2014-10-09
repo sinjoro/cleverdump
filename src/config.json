@@ -3,7 +3,7 @@
         {
             "name": "express",
             "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
-            "to": "/share/ndump/daily",
+            "to": "Z:/ndump/daily",
             "toSubdirectory": "Triasoft/Express",
             "onlyCurrent": "%year",
             "frequency": "daily"
@@ -11,21 +11,21 @@
         {
             "name": "express",
             "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
-            "to": "/share/ndump/weekly",
+            "to": "Z:/ndump/weekly",
             "toSubdirectory": "Triasoft/Express",
             "frequency": "weekly"
         },
         {
             "name": "express",
             "from": "/media/stanislav/Elements/backup-vera/Triasoft/Express/reg",
-            "to": "/share/ndump/yearly",
+            "to": "Z:/ndump/yearly",
             "toSubdirectory": "Triasoft/Express",
             "frequency": "yearly"
         }
     ],
     "log" : "/home/stanislav/log",
     "disk" :{
-        "needle" : "/share",
-        "to" : ["Z:", "Y:", "X:"]
+        "needle" : "Z:/",
+        "to" : ["Y:", "/share/", "X:"]
     }
 }

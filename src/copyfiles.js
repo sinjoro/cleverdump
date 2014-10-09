@@ -154,11 +154,13 @@
                     $scope.$digest();
                 }
                 var options = {};
+                var currentDir = dump.from;
+                var toDir = dump.toFull;
                 if (dump.onlyCurrent) {
-                    var currentDir = dump.from + '/' + dump.onlyCurrent.replace('%year', moment().format('YYYY'));
-                    options.filter = nwglobal.RegExp(dump.from + '$' + '|' + currentDir);
+                    currentDir = dump.from + '/' + dump.onlyCurrent.replace('%year', moment().format('YYYY'));
+                    toDir = dump.toFull + '/' + dump.onlyCurrent.replace('%year', moment().format('YYYY'));
                 }
-                ncp(dump.from, dump.toFull, options, function (err) {
+                ncp(currentDir , toDir, options, function (err) {
                     if (err) {
                         setErrorMessage(err.toString());
                         return;
