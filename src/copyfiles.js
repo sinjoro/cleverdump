@@ -3,11 +3,13 @@
     angular.module('cleverdump', [])
         .controller('CopyController', function ($scope, $window) {
             var packageConfig = require('../package.json');
-            var config = require('./config.json');
+            var configCall = require('./config');
+            var config = configCall();
             var moment = require('moment');
             var ncp = require('ncp').ncp;
             var fs = require('node-fs');
             var glob = require('glob');
+
 
             var rmdir = require('rimraf');
             /*to switch to node context of Objects - such as Array / Function / RegExp*/

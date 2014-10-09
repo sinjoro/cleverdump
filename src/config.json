@@ -23,5 +23,9 @@
             "frequency": "yearly"
         }
     ],
-    "log" : "/home/stanislav/log"
+    "log" : "/home/stanislav/log",
+    "disk" :{
+        "needle" : "/share",
+        "to" : ["Z:", "Y:", "X:"]
+    }
 }

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/**/*.js', '!src/close.js'],
+        src: ['src/**/*.js', '!src/close.js', '!src/config.js'],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 	main: {
 		expand: true,
 		cwd: 'src/',
-		src: ['index.html', 'config.json', 'close.js'],
+		src: ['index.html', 'config.json', 'close.js', 'config.js'],
 		dest: 'dist/',
 		flatten: true, 
 		filter: 'isFile'

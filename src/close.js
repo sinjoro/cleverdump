@@ -2,7 +2,8 @@ function exitApp(callback) {
     var moment = require('moment');
     var fs = require('node-fs');
     var glob = require('glob');
-    var dirname = require('./config.json').log + "/";
+    var configCall = require('./config');
+    var dirname = configCall().log + "/";
     fs.mkdirSync(dirname, '0777', true, true);
     var path = dirname + moment().format('YYYY-w') + '.log';
     fs.appendFileSync(path, '\n' + new Date().toString());
